@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" href="FinalProject.css">
+</head>
+<body style="background-color: #f4f4f4;">
+    <div class="container">
+        <div class="img">
+            <img src="Banner.png" alt="Banner" style="float:left">
+        </div>
+        <div class="text">
+            <form id = "Form" style= "float:left">
+                <label for= "Days">Day of the Week:</label>
+                <select name ="Day" id= "Day">
+                    <optgroup label= "Weekdays">
+                        <option value= "Monday">Monday</option>
+                        <option value= "Tuesday">Tuesday</option>
+                        <option value= "Wednesday">Wednesday</option>
+                        <option value= "Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                    </optgroup>
+                    <optgroup label= "Weekends">
+                        <option value= "Saturday">Saturday</option>
+                        <option value= "Sunday">Sunday</option>
+                    </optgroup>
+                </select><pre></pre>
+
+                <label for="Goal">Goal of the Week:</label>
+                <select name = "Goal" id= "Goal">
+                    <option value= "Weight Loss">Weight Loss</option>
+                    <option value="Weight Gain">Weight Gain</option>
+                    <option value= "Body Building">Body Building</option>
+                </select><br><br>
+
+                <label for="Breakfast">Breakfast:</label><br>
+                <input type = "text" id = "Breakfast" value = "Breakfast"><br><br>
+                
+                <label for="Snack">Snack:</label><br>
+                <input type = "text" id = "Snack" value = "Snack"><br><br>
+                
+                <label for="Lunch">Lunch:</label><br>
+                <input type = "text" id = "Lunch" value = "Lunch"><br><br>
+                
+                <label for="Snack&Dinner">Snack & Dinner</label><br>
+                <input type = "text" id = "Snack&Dinner" value = "Snack&Dinner"><br><br>    
+
+                
+                <label for="Email Address">*Email Address:</label><br>
+                <input type="text" id="Email" value= "Email" required><br><br>
+                
+                <label for="Name">Name:</label><br>
+                <input type="text" id="Email" value="Name"><br><br>
+                <input type = "button" id = "Submit" value = "Submit Plan">
+                <input type = "button" id = "Clear" value = "Clear Plan">
+                <input type = "button" id = "Print" value = "Print Plan">
+            </form>
+        </div>
+        <div class="output">
+        </div>
+    </div>
+    <script src="projectJs.js">
+    </script>
+</body>
+</html>
