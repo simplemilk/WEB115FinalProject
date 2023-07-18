@@ -1,65 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>WEB-115 Final Project</title>
     <link rel="stylesheet" href="FinalProject.css">
 </head>
-<body style="background-color: #f4f4f4;">
-    <div class="container">
-        <div class="img">
-            <img src="Banner.png" alt="Banner" style="float:left">
-        </div>
-        <div class="text">
-            <form id = "Form" style= "float:left">
-                <label for= "Days">Day of the Week:</label>
-                <select name ="Day" id= "Day">
-                    <optgroup label= "Weekdays">
-                        <option value= "Monday">Monday</option>
-                        <option value= "Tuesday">Tuesday</option>
-                        <option value= "Wednesday">Wednesday</option>
-                        <option value= "Thursday">Thursday</option>
-                        <option value="Friday">Friday</option>
-                    </optgroup>
-                    <optgroup label= "Weekends">
-                        <option value= "Saturday">Saturday</option>
-                        <option value= "Sunday">Sunday</option>
-                    </optgroup>
-                </select><pre></pre>
+    
+    <body style="background-color: #f4f4f4;">
+        <div class="container">
+            <div class="img">
+                <img src="Banner.png" alt="Banner">
+            </div>
+        <form id="mealPlanForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br>
 
-                <label for="Goal">Goal of the Week:</label>
-                <select name = "Goal" id= "Goal">
-                    <option value= "Weight Loss">Weight Loss</option>
-                    <option value="Weight Gain">Weight Gain</option>
-                    <option value= "Body Building">Body Building</option>
-                </select><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
 
-                <label for="Breakfast">Breakfast:</label><br>
-                <input type = "text" id = "Breakfast" value = "Breakfast"><br><br>
-                
-                <label for="Snack">Snack:</label><br>
-                <input type = "text" id = "Snack" value = "Snack"><br><br>
-                
-                <label for="Lunch">Lunch:</label><br>
-                <input type = "text" id = "Lunch" value = "Lunch"><br><br>
-                
-                <label for="Snack&Dinner">Snack & Dinner</label><br>
-                <input type = "text" id = "Snack&Dinner" value = "Snack&Dinner"><br><br>    
+            <label for="goal">Goal:</label>
+            <textarea id="goal" required></textarea><br>
 
-                
-                <label for="Email Address">*Email Address:</label><br>
-                <input type="text" id="Email" value= "Email" required><br><br>
-                
-                <label for="Name">Name:</label><br>
-                <input type="text" id="Email" value="Name"><br><br>
-                <input type = "button" id = "Submit" value = "Submit Plan">
-                <input type = "button" id = "Clear" value = "Clear Plan">
-                <input type = "button" id = "Print" value = "Print Plan">
-            </form>
-        </div>
-        <div class="output">
-        </div>
-    </div>
-    <script src="projectJs.js">
-    </script>
-</body>
+            <h2>Weekly Meal Plan</h2>
+
+            <h3>Monday</h3>
+                <label for="breakfast1">Breakfast:</label>
+                <input type="text" id="breakfast1"><br>
+
+                <label for="snack1">Snack:</label>
+                <input type="text" id="snack1"><br>
+
+                <label for="lunch1">Lunch:</label>
+                <input type="text" id="lunch1"><br>
+
+                <label for="dinner1">Dinner & Snack:</label>
+                <input type="text" id="dinner1"><br>
+
+            <h3>Tuesday</h3>
+                <label for="breakfast2">Breakfast:</label>
+                <input type="text" id="breakfast2"><br>
+
+                <label for="snack2">Snack:</label>
+                <input type="text" id="snack2"><br>
+
+                <label for="lunch2">Lunch:</label>
+                <input type="text" id="lunch2"><br>
+
+                <label for="dinner2">Dinner & Snack:</label>
+                <input type="text" id="dinner2"><br>
+
+            <h3>Wednesday</h3>
+                <label for="breakfast3">Breakfast:</label>
+                <input type="text" id="breakfast3"><br>
+
+                <label for="snack3">Snack:</label>
+                <input type="text" id="snack3"><br>
+
+                <label for="lunch3">Lunch:</label>
+                <input type="text" id="lunch3"><br>
+
+                <label for="dinner3">Dinner & Snack:</label>
+                <input type="text" id="dinner3"><br>
+
+            <h3>Thursday</h3>
+                <label for="breakfast4">Breakfast:</label>
+                <input type="text" id="breakfast4"><br>
+
+                <label for="snack4">Snack:</label>
+                <input type="text" id="snack4"><br>
+
+                <label for="lunch4">Lunch:</label>
+                <input type="text" id="lunch4"><br>
+
+                <label for="dinner4">Dinner & Snack:</label>
+                <input type="text" id="dinner4"><br>
+
+            <h3>Friday</h3>
+                <label for="breakfast5">Breakfast:</label>
+                <input type="text" id="breakfast5"><br>
+
+                <label for="snack5">Snack:</label>
+                <input type="text" id="snack5"><br>
+
+                <label for="lunch5">Lunch:</label>
+                <input type="text" id="lunch5"><br>
+
+                <label for="dinner5">Dinner & Snack:</label>
+                <input type="text" id="dinner5"><br>
+
+            <h3>Saturday</h3>
+                <label for="breakfast6">Breakfast:</label>
+                <input type="text" id="breakfast6"><br>
+
+                <label for="snack6">Snack:</label>
+                <input type="text" id="snack6"><br>
+
+                <label for="lunch6">Lunch:</label>
+                <input type="text" id="lunch6"><br>
+
+                <label for="dinner6">Dinner & Snack:</label>
+                <input type="text" id="dinner6"><br>
+
+            <h3>Sunday</h3>
+                <label for="breakfast7">Breakfast:</label>
+                <input type="text" id="breakfast7"><br>
+
+                <label for="snack7">Snack:</label>
+                <input type="text" id="snack7"><br>
+
+                <label for="lunch7">Lunch:</label>
+                <input type="text" id="lunch7"><br>
+
+                <label for="dinner7">Dinner & Snack:</label>
+                <input type="text" id="dinner7"><br>
+
+                <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+                <button type="button" onclick="clearMealPlan()">Clear Meal Plan</button>
+        </form>
+    <script src="projectJS.js"></script>
+    </body>
+
 </html>
